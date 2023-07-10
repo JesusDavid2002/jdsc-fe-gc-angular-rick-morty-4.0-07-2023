@@ -1,15 +1,39 @@
-#nombre{
-    margin-left: 30px;
+.container-fluid{
+    background-color: rgb(208, 250, 225);
+    margin-right: -10px;
 }
 
-#password{
-    margin-left: 92px;
+.usuario{
+    margin-left: -260px;
 }
 
-#passwordValidation{
-    margin-left: 123px;
+.password{
+    margin-left: -320px;
+}
+
+.passwordValid{
+    margin-left: -350px;
 }
 
 .btn{
-    width: 24vw;
+    width: 26vw;
+}
+
+.cl-img{
+    margin: -16px;
+    margin-left: -35px;
+}
+
+img{
+    width: 600px;
+    height: 940px;
+}
+
+.cl-form{
+    margin-top: 250px;
+    margin-left: 50px;
+}
+
+input{
+    width: 500px;
 }

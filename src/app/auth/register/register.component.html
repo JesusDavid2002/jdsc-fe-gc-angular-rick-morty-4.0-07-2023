@@ -1,12 +1,17 @@
-<div class="container">
-    <div class="row my-3 text-center">
-        <p>Introduzca un nombre de usuario: <input type="text" id="nombre" [(ngModel)]="usuario"></p>
-        <p>Introduzca la contraseña: <input type="password"  id="password" [(ngModel)]="password"></p>
-        <p>Repite la contraseña: <input type="password"  id="passwordValidation" [(ngModel)]="passwordValidation"></p>
-    </div>
-    <div class="row text-center">
-        <div class="col">
-            <div class="btn btn-primary mx-3" (click)="crearUsuario()">Crear Usuario</div>
+<div class="container-fluid">
+    <div class="row py-3 text-center">
+        <div class="col-2 cl-img">
+            <img src="https://wallpapers.com/images/featured/rick-and-morty-8rc57d4ds44gqzau.jpg" alt="">
+        </div>
+        <div class="col cl-form">
+            <p class="my-3 usuario">Introduzca un nombre de usuario:</p>
+            <input type="text" id="nombre" [(ngModel)]="usuario">
+            <p class="my-3 password">Introduzca la contraseña:</p>
+            <input type="password"  id="password" [(ngModel)]="password">
+            <p class="my-3 passwordValid">Repite la contraseña:</p>
+            <input type="password" id="passwordValidation" [(ngModel)]="passwordValidation">
+            <div><div class="btn btn-primary px-3 my-4" (click)="crearUsuario()">Crear Usuario</div></div>
+            <a routerLink="/login">Do you have an account? Log in</a>
         </div>
     </div>
 </div>

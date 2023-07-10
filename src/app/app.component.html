@@ -1,23 +1,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<div class="container-fluid">
-  <div class="row rw-header py-3">
-    <div class="col-6 ps-5">
-      <h3>Rick and Morty</h3>
-    </div>
-    <div class="col-2 text-center my-2">
-      <a routerLink="/">Home</a>
-      <a routerLink="/character-list">Characters</a>
-      <a routerLink="/about-us">About</a>
-    </div>
-    <div class="col">
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 buscador" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid">
+<div class="container-fluid app-login">
+<ng-content></ng-content>
 <router-outlet></router-outlet>
 </div>
