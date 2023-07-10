@@ -1,1 +1,12 @@
-<p>register works!</p>
+<div class="container">
+    <div class="row my-3 text-center">
+        <p>Introduzca un nombre de usuario: <input type="text" id="nombre" [(ngModel)]="usuario"></p>
+        <p>Introduzca la contraseña: <input type="password"  id="password" [(ngModel)]="password"></p>
+        <p>Repite la contraseña: <input type="password"  id="passwordValidation" [(ngModel)]="passwordValidation"></p>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <div class="btn btn-primary mx-3" (click)="crearUsuario()">Crear Usuario</div>
+        </div>
+    </div>
+</div>
