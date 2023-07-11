@@ -1,3 +1,7 @@
+.container-fluid{
+    background-color: rgb(226, 226, 226);
+}
+
 .cl-char{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

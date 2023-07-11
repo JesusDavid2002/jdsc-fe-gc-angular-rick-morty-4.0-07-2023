@@ -1,5 +1,5 @@
-.btn{
-    width: 26vw;
+.container-fluid{
+    background-color: rgb(226, 226, 226);
 }
 
 .cl-img{
@@ -19,3 +19,6 @@ input{
     height: 40px;
 }
 
+.btn{
+    width: 26vw;
+}

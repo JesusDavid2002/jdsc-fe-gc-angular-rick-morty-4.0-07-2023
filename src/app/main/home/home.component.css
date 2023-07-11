@@ -1,8 +1,29 @@
-img{
-    width: 500px;
-    height: 300px;
-}
-
 p{
     font-size: large;
+}
+
+.ct-home {
+    position: fixed;
+    margin-left: -12px;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+}
+
+.ct-home .col {
+    padding: 0;
+} 
+
+.ct-home .col img {
+    width: 100vw;
+    height: 87vh;
+}
+
+.cl-text{
+    margin-top: 200px;
+}
+
+@media (max-width: 970px) { 
+    .ct-home .col img {
+        display: none;
+    }
 }
