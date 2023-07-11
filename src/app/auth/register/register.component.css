@@ -1,39 +1,20 @@
-.container-fluid{
-    background-color: rgb(208, 250, 225);
-    margin-right: -10px;
-}
-
-.usuario{
-    margin-left: -260px;
-}
-
-.password{
-    margin-left: -320px;
-}
-
-.passwordValid{
-    margin-left: -350px;
-}
-
 .btn{
     width: 26vw;
 }
 
 .cl-img{
-    margin: -16px;
-    margin-left: -35px;
-}
-
-img{
-    width: 600px;
-    height: 940px;
+    background: url(https://wallpapers.com/images/featured/rick-and-morty-8rc57d4ds44gqzau.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-left: -12px;
 }
 
 .cl-form{
-    margin-top: 250px;
-    margin-left: 50px;
+    margin-top: 200px;
 }
 
 input{
     width: 500px;
+    height: 40px;
 }

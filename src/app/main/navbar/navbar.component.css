@@ -1,0 +1,28 @@
+.ct{
+    background-color: rgb(58, 58, 58);
+    margin: -12px;
+    width: 100vw;
+}
+
+h3{
+    color: white;
+}
+
+a{
+    text-decoration-line: none;
+    color: rgb(156, 156, 156);
+    margin: 20px;
+}
+
+a:hover{
+    color: white;
+}
+
+#title{
+    color: white;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

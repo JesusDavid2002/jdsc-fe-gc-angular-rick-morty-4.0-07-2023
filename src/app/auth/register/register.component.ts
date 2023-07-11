@@ -7,22 +7,24 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
   usuario: string = '';
+  email: string = '';
   password: string = '';
-  passwordValidation: string = '';
+  passwordValid: string = '';
 
   nuevoUsuario: any = [];
 
-  validarUsuario(){
-    if (this.password === this.passwordValidation){
-      this.crearUsuario();
+  // Creamos un método para validar el usuario, si las 2 contraseña son iguales entonces crea el usuario
+  validateUser(){
+    if(this.password === this.passwordValid){
+      this.createUser();
     }else{
-      alert('Las contraseñas son diferentes');
+      alert('Passwords are not equals');
     }
   }
-
-  crearUsuario(){
+  createUser(){
     let usuarios = {
-      'usuario': this.usuario,      
+      'usuario': this.usuario,  
+      'email': this.email,    
       'password': this.password
     }
     this.nuevoUsuario.push(usuarios);

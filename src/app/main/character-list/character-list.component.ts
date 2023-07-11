@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import datos from 'src/assets/database.json'
+import { PaginaService } from 'src/app/services/pagina.service';
 
 @Component({
   selector: 'app-character-list',
@@ -7,5 +7,25 @@ import datos from 'src/assets/database.json'
   styleUrls: ['./character-list.component.css']
 })
 export class CharacterListComponent{
-  datosArray: any[] = datos.characters;
+  characters: any = null;
+  arrayChar: any = [];
+
+  constructor(private paginaService: PaginaService){}
+
+  // Vamos creando id aleatorias entre 1 y 700 para luego pasarlas al arrayChar
+  random(){
+      for (let i = 0; i < 8; i++) {
+      let randomCharacters = (Math.floor(Math.random()*700)+1);
+      this.arrayChar.push(`,${randomCharacters}`);
+      
+    }
+    return this.arrayChar;
+  }
+  
+  // Posteriormente utilizamos el método anterior para ir pasando las ids y asi mostrar los personajes que correspondan con la id
+  ngOnInit(){
+    this.paginaService.returnCharacters(this.random())
+      .subscribe( result => this.characters = result)
+      
+  }
 }

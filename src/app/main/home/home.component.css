@@ -1,21 +1,8 @@
-.rw-header{
-    background-color: rgb(58, 58, 58);
+img{
+    width: 500px;
+    height: 300px;
 }
 
-h3{
-    color: white;
-}
-
-a{
-    text-decoration-line: none;
-    color: rgb(156, 156, 156);
-    margin: 20px;
-}
-
-a:hover{
-    color: white;
-}
-
-.buscador{
-    width: 300px;
+p{
+    font-size: large;
 }

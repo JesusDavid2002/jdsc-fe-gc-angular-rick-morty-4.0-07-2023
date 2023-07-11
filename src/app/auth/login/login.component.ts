@@ -6,10 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  usuario: string = '';
+  username: string = '';
   password: string = '';
 
+  usuarioLogged: any = [];
+
   inicarSesion(){
-    
+    let usuario = {
+      'username': this.username,
+      'password': this.password
+    }
+    this.usuarioLogged.push(usuario);
   }
 }
