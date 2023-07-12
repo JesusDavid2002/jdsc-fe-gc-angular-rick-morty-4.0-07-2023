@@ -3,14 +3,13 @@
         <div class="col-4 cl-img"></div>
         <div class="col-2"></div>
         <div class="col cl-form">
+            <h3>Log in</h3>
             <p class="my-3">Username:</p>
             <input type="text" placeholder="example254" id="username" [(ngModel)]="username">
             <p class="my-3">Password:</p>
             <input type="password" id="password" [(ngModel)]="password">
-            <div><div class="btn btn-primary px-3 my-4" (click)="inicarSesion()">Iniciar Sesión</div></div>
-            <div class="col-6 text-center">
-                <a routerLink="/register">Do you have not an account? Sign Up</a>
-            </div>
+            <div><div class="btn btn-primary my-4" (click)="inicarSesion()">Iniciar Sesión</div></div>
+            <a routerLink="/register">Do you have not an account? Sign Up</a>
         </div>
     </div>
 </div>

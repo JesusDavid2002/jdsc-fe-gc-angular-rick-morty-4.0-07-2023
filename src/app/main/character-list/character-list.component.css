@@ -1,8 +1,12 @@
 .container-fluid{
     background-color: rgb(226, 226, 226);
+    position: absolute;
+    margin-left: -12px;
 }
 
-.cl-char{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+@media (max-width: 750px){
+    .rw-cards{
+        display: grid;
+        justify-content: center !important;
+    }
 }

@@ -3,9 +3,9 @@ p{
 }
 
 .ct-home {
-    position: fixed;
+    position: absolute;
+    height: 88vh;
     margin-left: -12px;
-    height: 100%;
     background-color: rgb(216, 216, 216);
 }
 
@@ -22,8 +22,20 @@ p{
     margin-top: 200px;
 }
 
+.cl-btn{
+    place-content: center;
+}
+
 @media (max-width: 970px) { 
-    .ct-home .col img {
+    .ct-home{
+        height: 87vh;
+    }
+
+    .ct-home .cl-img {
         display: none;
+    }
+    
+    .cl-text{
+        margin-top: 50px;
     }
 }

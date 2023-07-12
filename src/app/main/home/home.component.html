@@ -1,24 +1,24 @@
 <app-navbar>
     <div class="container-fluid ct-home mt-1">
         <div class="row text-center">
-            <div class="col">
+            <div class="col cl-img">
                 <img src="../../../assets/img/morty.png" class="img-fluid" alt="">
             </div>
-            <div class="col mx-5 cl-text">
+            <div class="col cl-text mx-3">
                 <h3>Welcome to the world of Rick and Morty</h3>
                 <div class="col mt-5">
                     <p>If you want to look of some characters click the first button. </p>
                     <p>Otherwise if you want to know about us click the second button. </p>
                 </div>
-                <div class="btn btn-secondary mx-3 mt-5" routerLink="/character-list">Search some characters</div>
-                <div class="btn btn-secondary mx-3 mt-5" routerLink="/about-us">About us</div>
+                <div class="col d-flex cl-btn">
+                    <div class="btn btn-secondary mx-3 mt-5" routerLink="/character-list">Search some characters</div>
+                    <div class="btn btn-secondary mx-3 mt-5" routerLink="/about-us">About us</div>
+                </div>
+                
             </div>
-            <div class="col">
+            <div class="col cl-img">
                 <img src="../../../assets/img/rick.png" class="img-fluid" alt="">
             </div>
         </div>
     </div>
 </app-navbar>
-
-
-

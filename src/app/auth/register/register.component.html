@@ -3,6 +3,7 @@
         <div class="col-4 cl-img"></div>
         <div class="col-2"></div>
         <div class="col cl-form">
+            <h3>Sign up</h3>
             <p class="my-3">Username:</p>
             <input type="text" placeholder="example254" id="usuario" [(ngModel)]="usuario">
             <p class="my-3">Email:</p>
@@ -12,9 +13,7 @@
             <p class="my-3">Repeat password:</p>
             <input type="password" id="passwordValidation" [(ngModel)]="passwordValid">
             <div><div class="btn btn-primary px-3 my-4" (click)="validateUser()">Crear Usuario</div></div>
-            <div class="col-6 text-center">
-                <a routerLink="/login">Do you have an account? Log in</a>
-            </div>
+            <a routerLink="/login">Do you have an account? Log in</a>
         </div>
     </div>
 </div>

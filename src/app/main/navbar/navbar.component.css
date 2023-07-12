@@ -4,8 +4,13 @@
     width: 100vw;
 }
 
+.navbar-toggler{
+    padding: 5px;
+}
+
 h3{
     color: white;
+    
 }
 
 a{
@@ -20,9 +25,10 @@ a:hover{
 
 #title{
     color: white;
+    justify-content: left !important;
 }
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }

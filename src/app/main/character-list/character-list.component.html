@@ -1,17 +1,21 @@
 <app-navbar>
     <div class="container-fluid" *ngIf="characters!=null; else espera">
         <div class="row">
-            <div class="col-1"></div>
-            <div class="col cl-char">
-                <div class="card my-3 mx-3" style="width: 18rem;" *ngFor="let datos of characters">
-                    <img [src]="datos.image" alt="Imagen de {{datos.name}}">
-                    <div class="card-body">
-                    <h5 class="card-title">{{datos.name}}</h5>
-                    <a [routerLink]="['/character-detail', datos.id]" class="btn btn-primary">See more</a>
+            <div class="col"></div>
+            <div class="col-12 col-md-9">
+                <div class="row rw-cards">
+                    <div class="col-12 col-md-6 col-xl-3" *ngFor="let datos of characters">
+                        <div class="card my-3 mx-3" style="width: 18rem;">
+                            <img [src]="datos.image" alt="Imagen de {{datos.name}}">
+                            <div class="card-body">
+                                <h5 class="card-title">{{datos.name}}</h5>
+                                <a [routerLink]="['/character-detail', datos.id]" class="btn btn-primary">See more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-1"></div>
+            <div class="col"></div>
         </div>
     </div>
 <ng-template #espera>Esperando datos...</ng-template>
