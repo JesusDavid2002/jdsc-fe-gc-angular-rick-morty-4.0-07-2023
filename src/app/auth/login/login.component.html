@@ -8,8 +8,12 @@
             <input type="text" placeholder="example254" id="username" [(ngModel)]="username">
             <p class="my-3">Password:</p>
             <input type="password" id="password" [(ngModel)]="password">
-            <div><div class="btn btn-primary my-4" (click)="inicarSesion()">Iniciar Sesión</div></div>
-            <a routerLink="/register">Do you have not an account? Sign Up</a>
+            <div>
+                <div class="btn btn-primary my-4" (click)="inicarSesion()">Iniciar Sesión</div>
+            </div>
+            <div class="col-9 text-center">
+                <a routerLink="/register">Do you have not an account? Sign Up</a>
+            </div>
         </div>
     </div>
 </div>

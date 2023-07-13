@@ -2,7 +2,6 @@
     background-color: rgb(226, 226, 226);
     position: absolute;
     margin-left: -12px;
-    height: 100vh;
 }
 
 h3{
@@ -13,12 +12,14 @@ h3{
     background: url(https://wallpapers.com/images/featured/rick-and-morty-8rc57d4ds44gqzau.jpg);
     background-size: cover;
     background-position: center;
+    position: fixed;
     height: 100vh;
     margin-left: -12px;
 }
 
 .cl-form{
     margin-top: 15vh;
+    margin-left: 30vw;
 }
 
 input{
@@ -27,11 +28,17 @@ input{
 }
 
 .btn{
-    width: 60%;
-    margin-left: 20px;
+    width: 70%;
+}
+
+a{
+    text-align: center;
 }
 
 @media (max-width: 750px){
+    .cl-form{
+        margin-left: 0;
+    }
     .cl-img{
         display: none;
     }
