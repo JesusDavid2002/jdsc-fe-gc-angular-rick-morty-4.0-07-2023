@@ -3,7 +3,7 @@ p{
 }
 
 .ct-home {
-    position: absolute;
+    width: 100vw;
     height: 88vh;
     margin-left: -12px;
     background-color: rgb(216, 216, 216);
