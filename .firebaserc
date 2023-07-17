@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "rick-and-morty-app-55555": {
+      "hosting": {
+        "jdsc-fe-gc-angular-rick-morty-07-2023": [
+          "rick-and-morty-app-55555"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "rick-and-morty-app-55555"
+  }
+}

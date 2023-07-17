@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './main/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CharacterDetailsComponent } from './main/character-details/character-details.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { CharacterDetailsComponent } from './main/character-details/character-de
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

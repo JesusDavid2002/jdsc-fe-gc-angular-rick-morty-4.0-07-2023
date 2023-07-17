@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { UsersService } from 'src/app/services/users.service';
 
 @Component({
   selector: 'app-login',
@@ -6,16 +8,36 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  username: string = '';
+  email: string = '';
   password: string = '';
 
-  usuarioLogged: any = [];
-
+  constructor(private userService: UsersService, private router: Router){}
+  
+  // Metodo para logearse y redireccionarse a la home
   inicarSesion(){
     let usuario = {
-      'username': this.username,
+      'email': this.email,
       'password': this.password
     }
-    this.usuarioLogged.push(usuario);
+
+    // Llamo al metodo login del servicio de users para logear al usuario que ya esta registrado
+    this.userService.login(usuario)
+      .then(response => {
+          console.log(response);
+          this.router.navigate(['/home']);
+        })
+      .catch(error =>{
+        alert('Constraseña incorrecta.');
+        console.log(error)});
+  }
+
+  // Metodo para logearse y registrarse mediante Google y redireccionarse a la home
+  inicarSesionGoogle(){
+    this.userService.loginWithGoogle()
+      .then(response => {
+          console.log(response);
+          this.router.navigate(['/home']);
+        })
+      .catch(error => console.log(error));
   }
 }
