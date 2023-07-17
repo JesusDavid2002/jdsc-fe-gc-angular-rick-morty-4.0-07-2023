@@ -6,6 +6,5 @@ export const environment = {
     apiKey: 'AIzaSyDYI2_VIw3i1ooIW5E2q4IsqnsTzLOp1yQ',
     authDomain: 'rick-and-morty-app-55555.firebaseapp.com',
     messagingSenderId: '483904000019',
-  },
-  production: false
+  }
 };

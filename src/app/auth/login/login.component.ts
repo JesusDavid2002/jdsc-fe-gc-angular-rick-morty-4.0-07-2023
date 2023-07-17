@@ -23,7 +23,6 @@ export class LoginComponent {
     // Llamo al metodo login del servicio de users para logear al usuario que ya esta registrado
     this.userService.login(usuario)
       .then(response => {
-          console.log(response);
           this.router.navigate(['/home']);
         })
       .catch(error =>{

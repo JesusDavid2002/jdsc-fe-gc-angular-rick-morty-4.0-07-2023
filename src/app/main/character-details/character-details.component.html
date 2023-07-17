@@ -4,13 +4,13 @@
             <div class="col-2"></div>
             <div class="col-4">
                 <div *ngIf="character">
-                    <h1 class="my-3">{{ character.name }}</h1>
+                    <h1 class="my-3">{{ character.name | titlecase}}</h1>
                     <p class="my-3">Id: {{character.id}}</p>     
-                    <p class="my-3">Status: {{character.status}}</p> 
-                    <p class="my-3">Specie: {{character.species}}</p> 
-                    <p class="my-3">Gender: {{character.gender}}</p>
-                    <p class="my-3">Origin: {{character.origin.name}}</p> 
-                    <p class="my-3">Location: {{character.location.name}}</p>
+                    <p class="my-3">Status: {{character.status | titlecase}}</p> 
+                    <p class="my-3">Specie: {{character.species | titlecase}}</p> 
+                    <p class="my-3">Gender: {{character.gender | titlecase}}</p>
+                    <p class="my-3">Origin: {{character.origin.name | titlecase}}</p> 
+                    <p class="my-3">Location: {{character.location.name | titlecase}}</p>
                 </div>
             </div>
             <div class="col my-4 mx-auto">
