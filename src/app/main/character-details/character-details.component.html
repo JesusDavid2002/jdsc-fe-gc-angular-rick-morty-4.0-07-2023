@@ -4,22 +4,24 @@
             <div class="col-2"></div>
             <div class="col-4">
                 <div *ngIf="character">
-                    <h1 class="my-3">{{ character.name | titlecase}}</h1>
+                    <h1 class="my-3">{{ character.name }}</h1>
                     <p class="my-3">Id: {{character.id}}</p>     
-                    <p class="my-3">Status: {{character.status | titlecase}}</p> 
-                    <p class="my-3">Specie: {{character.species | titlecase}}</p> 
-                    <p class="my-3">Gender: {{character.gender | titlecase}}</p>
-                    <p class="my-3">Origin: {{character.origin.name | titlecase}}</p> 
-                    <p class="my-3">Location: {{character.location.name | titlecase}}</p>
+                    <p class="my-3">Status: {{character.status}}</p> 
+                    <p class="my-3">Specie: {{character.species}}</p> 
+                    <p class="my-3">Gender: {{character.gender}}</p>
+                    <p class="my-3">Origin: {{character.origin}}</p> 
+                    <p class="my-3">Location: {{character.location}}</p>
                 </div>
             </div>
-            <div class="col my-4 mx-auto">
+            <div class="col my-4 mx-auto cl-img" *ngIf="character">
                 <img [src]="character.image" alt="Imagen de {{character.name}}">
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <a routerLink="/character-list" class="btn btn-light">Go back to characters</a>
+                <a routerLink="/character-list" class="btn btn-light mx-3 my-2">Go back to characters</a>
+                <a [routerLink]="['/edit-character', character.id]" class="btn btn-success mx-3 my-2">Modify character</a>
+                <a class="btn btn-danger mx-3 my-2" (click)="deleteCharacter()">Delete character</a>
             </div>
         </div>
     </div>

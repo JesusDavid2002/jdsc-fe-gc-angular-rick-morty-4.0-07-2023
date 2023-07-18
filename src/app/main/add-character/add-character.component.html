@@ -1,0 +1,27 @@
+<app-navbar>
+    <div class="container">
+        <div class="row">
+            <div class="col-2 cl"></div>
+            <div class="col-4">
+                <div *ngIf="character">
+                    <p>Name: <input type="text" name="" id="name" [(ngModel)]="character.name"></p>
+                    <p>Status: <input type="text" name="" id="status" [(ngModel)]="character.status"></p>
+                    <p>Specie: <input type="text" name="" id="species" [(ngModel)]="character.species"></p>
+                    <p>Gender: <input type="text" name="" id="gender" [(ngModel)]="character.gender"></p>
+                    <p>Origin: <input type="text" name="" id="origin" [(ngModel)]="character.origin"></p>
+                    <p>Location: <input type="text" name="" id="location" [(ngModel)]="character.location"></p>
+                    <p>Image: <input type="text" name="" id="image" [(ngModel)]="character.image"></p>          
+                </div>
+            </div>
+            <div class="col cl-img" *ngIf="character">
+                <img [src]="character.image" alt="Imagen de {{character.name}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a routerLink="/character-list" class="btn btn-light mx-3 my-2">Go back to characters</a>
+                <a class="btn btn-success mx-3 my-2" (click)="createCharacter()">Confirm new character</a>
+            </div>
+        </div>
+    </div>
+</app-navbar>

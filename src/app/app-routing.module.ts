@@ -2,11 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HomeComponent } from './main/home/home.component'
-import { CharacterListComponent } from './main/character-list/character-list.component';
+import { CharacterListComponent } from './main/character-list/character-list.component'
+import { CharacterDetailsComponent } from './main/character-details/character-details.component';
+import { AddCharacterComponent } from './main/add-character/add-character.component';
+import { EditCharacterComponent } from './main/edit-character/edit-character.component';;
 import { AboutComponent } from './main/about/about.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { CharacterDetailsComponent } from './main/character-details/character-details.component';
+
 import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 
 const routes: Routes = [
@@ -29,6 +32,14 @@ const routes: Routes = [
     path:'character-detail/:id',
     component: CharacterDetailsComponent,
     ...canActivate(() => redirectUnauthorizedTo(["/login"]))
+  },
+  {
+    path:'create-character',
+    component: AddCharacterComponent
+  },
+  {
+    path:'edit-character/:id',
+    component: EditCharacterComponent
   },
   {
     path:'login',

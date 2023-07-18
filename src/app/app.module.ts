@@ -16,6 +16,8 @@ import { CharacterDetailsComponent } from './main/character-details/character-de
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AddCharacterComponent } from './main/add-character/add-character.component';
+import { EditCharacterComponent } from './main/edit-character/edit-character.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     CharacterDetailsComponent,
     AboutComponent,
     NavbarComponent,
+    AddCharacterComponent,
+    EditCharacterComponent,
   ],
   imports: [
     BrowserModule,

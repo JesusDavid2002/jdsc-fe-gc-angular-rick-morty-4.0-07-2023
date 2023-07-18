@@ -4,6 +4,14 @@
     margin-left: -12px;
 }
 
+.btn{
+    width: 100%;
+}
+
+.rw-btn{
+    place-content: center;
+}
+
 @media (max-width: 750px){
     .rw-cards{
         display: grid;
